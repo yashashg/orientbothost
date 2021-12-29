@@ -1,0 +1,54 @@
+.gallery {
+  background-color: rgba(240, 248, 255, 0);
+  overflow-x: hidden;
+}
+.gallery .row-cols-1 a {
+  color: black !important;
+}
+.gallery .h1 {
+  margin-top: 20vh;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  font-size: 25px;
+}
+.gallery .h2 {
+  margin-top: 20vh;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px !important;
+}
+.gallery .row {
+  background-color: rgba(255, 192, 203, 0) !important;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.gallery .col-lg-5 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+.gallery .card .card-body {
+  background-color: rgba(0, 17, 255, 0) !important;
+}
+.galls {
+  display: flex;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.galls .card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery .card:hover {
+  transition: 500ms;
+  box-shadow: 1px 0px 18px 5px #888888;
+}

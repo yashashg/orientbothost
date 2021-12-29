@@ -1,0 +1,121 @@
+.cardac {
+  font-weight: 300;
+  line-height: 1.42em;
+  background-color: #f0f0f0;
+  overflow-x: hidden !important;
+}
+
+.blue {
+  color: #185875;
+}
+.yellow {
+  color: #fff842;
+}
+
+.cardactivity td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+  -moz-box-shadow: 0 2px 2px -2px #0e1119;
+  box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+.cardactivity {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.cardactivity td,
+.cardactivity th {
+  color: black;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+  padding-left: 2%;
+}
+
+/* Background-color of the odd rows */
+.cardactivity tr:nth-child(odd) {
+  background-color: #e9e9e9;
+}
+
+/* Background-color of the even rows */
+.cardactivity tr:nth-child(even) {
+  background-color: #b9b9b9;
+}
+
+.cardactivity th {
+  background-color: #868686;
+}
+
+.cardactivity td:first-child {
+  color: black;
+}
+
+.cardactivity tr:hover {
+  background-color: #c2dbf5;
+  -webkit-box-shadow: 0 6px 6px -6px #0e1119;
+  -moz-box-shadow: 0 6px 6px -6px #0e1119;
+  box-shadow: 0 6px 6px -6px #0e1119;
+}
+
+.cardactivity td:hover {
+  background-color: #00003e;
+  color: white;
+  font-weight: bold;
+
+  box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px,
+    #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+  .cardactivity td:nth-child(4),
+  .cardactivity th:nth-child(4) {
+    display: none;
+  }
+}
+
+.cardactivity tr {
+  margin-top: 0%;
+  padding-top: 0%;
+}
+.price .table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.price h2 {
+  margin-left: 60px;
+}
+.cardac .card-header {
+  color: #000069;
+}
+.cardac .card {
+  box-shadow: 0 0 20px 0 rgba(5, 16, 59, 0.3);
+  background: linear-gradient(
+    40deg,
+    transparent 10%,
+    rgba(255, 255, 255, 0.16) 60%,
+    transparent 100%
+  );
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.cancel .card {
+  width: 90%;
+}
+
+.deluxe .center {
+  width: 95%;
+}

@@ -1,0 +1,187 @@
+:root {
+  --speed: 1;
+  --delay: 0.5;
+  --font-size: 24;
+}
+@font-face {
+  font-family: "Circe Bold";
+  src: url("Circe-Bold.eot");
+  src: url("Circe-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Circe-Bold.woff") format("woff"),
+    url("Circe-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.home {
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  font-family: "MADE Evolve Sans EVO", sans-serif;
+}
+.home .h {
+  position: absolute;
+  z-index: 7;
+  text-align: center;
+  width: max-content;
+  position: absolute;
+  text-align: center;
+  left: 100%;
+  top: 80%;
+  margin-left: -125px;
+  transform: translate(-100%, -50%);
+  color: white !important;
+}
+.home .btn {
+  background-color: #477fe4 !important;
+  z-index: 7;
+  width: max-content;
+  color: white;
+}
+.home .h2 {
+  padding-bottom: 8%;
+}
+.home .page h1 {
+  margin-top: 68%;
+}
+.home .page {
+  color: white !important;
+}
+#myVideo {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  width: 85%;
+  max-height: 95vh;
+  bottom: 0%;
+}
+.home .absolute {
+  width: 250px;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 5%;
+  margin-left: -125px;
+  z-index: 4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.glitch--8 [data-char] {
+  --split: 50;
+  color: transparent;
+  position: relative;
+}
+.glitch--8 [data-char]:after,
+.glitch--8 [data-char]:before {
+  content: attr(data-char);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  color: white;
+  -webkit-clip-path: var(--clip);
+  clip-path: var(--clip);
+}
+.glitch--8 [data-char]:after {
+  --clip: inset(0 0 calc(var(--split) * 1%) 0);
+  --shift-y: -20;
+  --shift-x: 50;
+  -webkit-animation: shift 3s infinite steps(1);
+  animation: shift 3s infinite steps(1);
+}
+.glitch--8 [data-char]:before {
+  --shift-x: -50;
+  -webkit-animation: shift 4s infinite steps(1);
+  animation: shift 4s infinite steps(1);
+  --clip: inset(calc((95 - var(--split)) * 1%) 0 0 0);
+}
+.glitch--8 [data-char="C"]:after,
+.glitch--8 [data-char="H"]:after {
+  --shift-y: 25;
+  --shift-x: 0;
+}
+
+@-webkit-keyframes shift {
+  0%,
+  68%,
+  72%,
+  100% {
+    transform: translate(0, 0);
+  }
+  70% {
+    transform: translate(
+      calc(var(--shift-x, 25) * 1%),
+      calc(var(--shift-y, 0) * 1%)
+    );
+  }
+}
+@keyframes shift {
+  0%,
+  68%,
+  72%,
+  100% {
+    transform: translate(0, 0);
+  }
+  70% {
+    transform: translate(
+      calc(var(--shift-x, 25) * 1%),
+      calc(var(--shift-y, 0) * 1%)
+    );
+  }
+}
+
+.home .old {
+  background-image: url(../img/orient3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 3;
+  height: 100vh;
+  widows: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .home {
+    display: block;
+  }
+  .home .old {
+    bottom: 0;
+    height: 50vh;
+  }
+  .home .h {
+    position: absolute;
+    z-index: 7;
+    width: max-content;
+    position: absolute;
+    text-align: center;
+    left: 100%;
+    top: 40%;
+    transform: translate(-65%, -50%);
+    color: white;
+  }
+  #myVideo {
+    width: 150%;
+    top: 0%;
+    left: 10%;
+  }
+  #myvideo source {
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+  .home .absolute {
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    left: 35%;
+    top: 1%;
+    margin-left: -125px;
+    z-index: 4;
+  }
+  .home .absolute img {
+    width: 40px;
+  }
+  .home .absolute h2 {
+    font-size: 18px !important;
+  }
+}

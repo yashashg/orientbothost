@@ -1,0 +1,183 @@
+.contact .sec1 {
+  background-image: url(../img/namaste.png);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000033;
+}
+
+.contact .sec1 h1 {
+  color: white;
+  position: absolute;
+  right: 0%;
+  top: 40vh;
+  transform: translateX(-50%);
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.contact form {
+  box-shadow: 1px 0px 18px 5px #888888;
+  background-color: white;
+  margin-right: 5%;
+  padding: 5% 2% 5% 2%;
+  height: 550px;
+}
+.contact input {
+  background-color: #dddddd00;
+  border: none;
+  border-bottom: 1px solid #000033;
+  border-radius: 0%;
+}
+.contact textarea {
+  background-color: #dddddd00;
+  border: 1px solid #000033;
+  border-radius: 0%;
+}
+
+.contact .sec2 {
+  display: flex;
+  margin: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.contact iframe {
+  margin-bottom: 25px;
+}
+
+.contact .detail {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.contact .card {
+  box-shadow: 1px 0px 10px 2px #888888;
+  background-color: white;
+}
+
+.contact .map {
+  margin-left: auto;
+  margin-right: 2%;
+}
+.contact .detail .col-lg-5 p {
+  margin: 0%;
+  padding: 0%;
+}
+.contact .btn {
+  margin-left: auto;
+}
+
+.testimonials {
+  margin: 4em auto;
+  width: 1100px;
+  max-width: 90%;
+}
+.testimonials::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.testimonials .block {
+  display: block;
+  margin: 0;
+}
+.testimonials .blockb:hover {
+  /* background-color: #000033; */
+  box-shadow: 1px 0px 10px 2px #585858;
+}
+@media only screen and (min-width: 650px) {
+  .testimonials .block {
+    float: left;
+    width: 50%;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .testimonials .block {
+    width: 33.3333333333%;
+    height: 280px;
+  }
+}
+.testimonials .block:nth-child(n + 2) {
+  padding: 1.5em;
+}
+.testimonials .block:nth-child(2),
+.testimonials .block:nth-child(4) {
+  background-color: #308fc3;
+}
+.testimonials .block:nth-child(3),
+.testimonials .block:nth-child(5) {
+  background-color: #35b8e4;
+}
+.testimonials .block:nth-child(6) {
+  background-color: #afce44;
+}
+.testimonials .block p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #fff;
+}
+.testimonials .block cite span {
+  display: block;
+  margin-top: 2em;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+}
+.testimonials h2 {
+  margin: 0 0 0.5em;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444;
+}
+.testimonials h5 {
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 300;
+  color: #308fc3;
+}
+
+@media all and (max-width: 768px) {
+  .contact .sec1 {
+    background-size: cover;
+  }
+  .contact .sec1 h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-left: 50%;
+  }
+  .contact .sec2 {
+    display: block;
+  }
+  .contact form {
+    height: 560px;
+    padding: 5%;
+  }
+  .contact iframe {
+    margin-top: 5%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact .card {
+    width: 98% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content !important;
+  }
+  .contact .detail {
+    display: block;
+  }
+  .contact .card-title {
+    margin-top: 5%;
+  }
+}

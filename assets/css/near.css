@@ -1,0 +1,42 @@
+.near .section1 {
+  background-image: url(../img/contact.jpg);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.near .section1 h1 {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 40vh;
+  transform: translateX(-50%);
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.near .sec2 .card {
+  margin: 5%;
+}
+.near .sec2 .card .col-md-7 {
+  margin-left: 2%;
+}
+
+.near .sec3 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: 100vh;
+}
+.near .sec3 .place {
+  display: flex;
+}
+.near .sec3 .place .card {
+  margin-top: 2%;
+  text-align: center;
+}
+.near .sec3 .place .card-title {
+  margin-top: 10%;
+}

@@ -1,0 +1,179 @@
+.member {
+  padding-top: 18vh;
+  margin-top: 0%;
+  height: 50vh;
+  text-align: center;
+  background-image: url(../img/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  backdrop-filter: blur(100px);
+}
+.mem .sec1 {
+  display: flex;
+  background-color: white;
+  height: auto;
+  padding: 2%;
+}
+.member .container {
+  box-shadow: 0 0 20px 0 rgba(5, 16, 59, 0.3);
+  background: linear-gradient(
+    40deg,
+    transparent 10%,
+    rgba(255, 255, 255, 0.418) 60%,
+    transparent 100%
+  );
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  height: auto;
+  width: 20%;
+}
+.member h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.member1 {
+  display: flex;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.member1 .container {
+  box-shadow: 0 0 20px 0 rgba(5, 16, 59, 0.3);
+  background: linear-gradient(
+    40deg,
+    transparent 10%,
+    rgba(255, 255, 255, 0.418) 60%,
+    transparent 100%
+  );
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  height: auto;
+}
+
+.member2 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.member2 .table {
+  margin-bottom: 10%;
+}
+.entermember {
+  margin-top: 5%;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.entermember h2 {
+  margin-left: 5%;
+}
+.entermember .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.entermember .card {
+  margin: 30px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.entermember .card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.entermember .card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.entermember .card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -100px;
+  height: 40px;
+}
+
+.entermember .card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.entermember .title-white {
+  color: white;
+}
+
+.entermember .title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .entermember .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+.entermember .card .card_title p {
+  margin-bottom: 0;
+}
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
+
+@media all and (max-width: 768px) {
+  .member {
+    height: 30vh;
+    padding-top: 10vh;
+  }
+  .member .container {
+    margin-top: 0;
+    width: auto;
+  }
+  .member1 {
+    display: block;
+  }
+  .mem .sec1 {
+    text-align: center !important;
+    display: inline;
+  }
+
+  .member2 {
+    width: 90%;
+  }
+}
